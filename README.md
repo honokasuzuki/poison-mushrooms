@@ -6,7 +6,7 @@ The Mushroom Dataset is obtained from the UC Irvine Machine Learning Repository.
 
 Several others have implemented artificial neural networks and other data mining techniques such as decision trees on this mushroom data set with high success. In this project, I aim to build upon past work by building a cost-sensitive neural network to account for the varying misclassification costs. 
 
-This is implemented in PyTorch (see file **nn_code.ipynb**) using a cost-sensitive loss function. With this code, we can observe the changes in misclassification rates by experimenting with different costs. For example, the plot below shows how the poisonous misclassification rate and edible misclassification rate change as the false negative cost increases (false positive cost is held at 1.0). 
+This is implemented in PyTorch (see file **nn_code.ipynb**) using a cost-sensitive binary cross-entropy loss function. With this code, we can observe the changes in misclassification rates by experimenting with different costs. For example, the plot below shows how the poisonous misclassification rate and edible misclassification rate change as the false negative cost increases beyond 1.0 (false positive cost is held at 1.0). 
 
 <img src="error_plot.png" width="350" height="250">
 
